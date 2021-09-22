@@ -7,8 +7,16 @@ public class Palindrome {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter the number:");
         String number=sc.next();
-        int num=number.charAt(0)-48;
-        String newNum=number+num;
+        String newNum=number;
+        int num=0;
+     /*   for(int i=number.length()-1;i>1;i--) {
+            if(number.charAt(i)!=number.charAt(i-1)) {
+                num = number.charAt(i-1) - 48;
+                newNum += num;
+            }
+        }*/
+        num = number.charAt(0) - 48;
+        newNum += num;
         System.out.println(newNum);
     }
 }
